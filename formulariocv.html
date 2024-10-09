@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+</head>
+    <body>
+        <form method="post" action="index.js" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Rellena tu CV</legend>
+                <label for="nombre" >nombre</label><br>
+                <input type="text" name="nombredeusuario" id="nombre" required><br>
+                <label for="nombre" >apellido</label><br>
+                <input type="text" name="apellido" id="apellido" required><br>
+                <label for="identificacion">DNI</label><br>
+                <input type="text" name="DNI" id="identificacion" size="50" minlength="8" maxlength="8" required><br>
+                <label for="contra">contraseña</label><br>
+                <input type="text" name="contraseña" id="contra" size="50" maxlength="7"><br>
+                <label>genero</label><br>
+                <input type="radio" name="genero" value="fem" id="femenino" checked >
+                <label for="femenino">femenino</label> <br>
+                <input type="radio" name="genero" value="masc" id="masculino" >
+                <label for="masculino">masculino</label><br>
+                <input type="radio" name="genero" value="otro" id="otro">
+                <label for="otro">otro</label><br>
+    
+                <label for="foto">incluir foto de perfil</label>
+                <input type="file" name="perfil" id="foto"><br> 
+    
+            </fieldset>
+            <input type="checkbox" name="acuerdos" value="acepta" id="acuerdos" checked>
+            <label for="acuerdos">acepto los terminos y condiciones</label><br>
+            <input type="submit" name="enviar" value="enviar datos">
+            <input type="reset" name="borrar" value="borrar datos ">
+        </form>
+    
+</body>
+</html>
